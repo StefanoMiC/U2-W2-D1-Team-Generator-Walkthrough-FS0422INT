@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex tests</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+        }
+
+        .box:first-of-type {
+            background-color: coral;
+        }
+
+        .box:nth-of-type(2) {
+            background-color: aquamarine;
+        }
+
+        .box:nth-of-type(3) {
+            background-color: palevioletred;
+        }
+
+        /* ul li {
+            display: inline-block;
+        } */
+
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex">
+        <div class="box">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod id impedit ipsam fugit tempora,
+            a fugiat asperiores maiores amet minus? Nobis dicta maiores sequi laboriosam? Ab alias adipisci sed nulla.
+        </div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, a.</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, a.</div>
+    </div>
+
+    <!-- <ul>
+        <li>item-1</li>
+        <li>item-2</li>
+        <li>item-3</li>
+        <li>item-4</li>
+        <li>item-5</li>
+    </ul> -->
+</body>
+
+</html>
